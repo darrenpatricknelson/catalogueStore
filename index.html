@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupids Bouquets | A love experience</title>
+
+    <!-- Bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- My css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link to font awesome -->
+    <script
+      src="https://kit.fontawesome.com/66abdbb5c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h2 class="navbar-brand" href="#">Cupids Bouquest</h2>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#landing">Home </a>
+          <a class="nav-item nav-link" href="#catalogue">Catalogue</a>
+          <a class="nav-item nav-link" href="#pricing">Pricing</a>
+          <a class="nav-item nav-link" href="#contactInfo">Contact us</a>
+        </div>
+      </div>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
+
+    <header id="landing" class="bg-light">
+      <img src="images/cupid.jpg" alt="Image of Cupid" class="bannerImages" />
+      <div class="welcome">
+        <h1>Welcome to Cupids Bouquets</h1>
+        <h4>We have a whole range of flowers for you to choose from.</h4>
+        <p>
+          As its the Month of love, we know you're shopping for that special
+          someone! If you are looking for a little floral inspiration, we’ve
+          picked out a few bouquets that are sure to make your loved ones smile,
+          from cheerful sunflowers for your mom (don’t tell us you were going to
+          skip her!) to sophisticated calla lilies for your significant other,
+          and daisies for your best friend. These delightful and fragrant floral
+          arrangements sure to put a smile on your Valentine's face this year.
+        </p>
+        <!-- Introduction paragragh taken from Town&Country article. Reference and link in reference section. -->
+      </div>
+      <img
+        src="images/bouquet.jpg"
+        alt="Image of a rose Bouquet"
+        class="bannerImages"
+      />
+    </header>
+
+    <!-- page content -->
+    <section id="catalogue">
+      <h1>Our Catalogue</h1>
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <!-- you use .img-thumbnail to give an image a rounded 1px border appearance according to bootstrap. Also, please note that I've added img-thumbnail to the container and not the image itself as I have the whole pop-up overlay that displays prices. I thought img-thumbnail looked better around the entire container than just the image. I know the task was t use img-thumbnails around the images but please don't penalize me for my creative spirit-->
+            <img
+              src="images/long-stemmedRose.jpg"
+              alt="Image of a Long-Stemmed Roses"
+              class="img-fluid image"
+            />
+            <!-- According to bootstrap, img-fluid makes images responsive. This means that the image scalse with the parent element. -->
+            <div class="overlay">
+              <div class="text">Long-Stemmed Roses</div>
+              <div class="text2">
+                Amour <br />
+                odealarose.com <br />
+                $188.00
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm description">
+            Sometimes classic is classic for a reason. Put together a bouquet of
+            long-stemmed red rose and your Valentine won't be mad about it. For
+            an extra touch, mix red with pink roses, which represent poetic love
+            and admiration
+          </div>
+
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/purpleOrchid.jpg"
+              alt="Image of a Purple Orchids"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Purple Orchids</div>
+              <div class="text2">
+                Watercolor Purple Orchid<br />
+                thesill.com<br />
+                $98.00
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm description">
+            These delicate, exotic flowers are a beautiful gift and, unlike a
+            typical bouquet, orchids can last for years, blooming each spring as
+            a special reminder of your relationship.
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/sunflower.png"
+              alt="Image of a Sunflowers"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Sunflowers</div>
+              <div class="text2">
+                Hello Sunshine<br />
+                Bouqs<br />
+                $54.00
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm description">
+            These cheerful beauties are the perfect flowers to send your mom or
+            a friend to brighten their day. Bouqs pairs these oversize blooms
+            with Solidago, a smaller flower, for double the yellow, double the
+            fun.
+          </div>
+
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/roseLilies.jpg"
+              alt="Image of a Rose Lilies"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Rose Lilies</div>
+              <div class="text2">
+                Double The Liliana<br />
+                urbanstems.com<br />
+                $80.00
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm description">
+            Crisp, creamy lilies are unexpected but ultra-sophisticated. Mix
+            these with roses for a unique bouquet or let them stand out on their
+            own. Lilies represent joy, which is exactly what they will deliver
+            to anyone lucky enough to receive a bouquet.
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/pinkTulip.jpg"
+              alt="Image of a Pink Tulips"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Pink Tulips</div>
+              <div class="text2">
+                Gabrielle<br />
+                odealarose.com<br />
+                $124.00
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            A brilliant bouquet of pink tulips is the perfect gift to give to
+            your true love. While every color of tulip has a different meaning,
+            pink ones are meant to symbolize care and affection.
+          </div>
+
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/driedFloral.png"
+              alt="Image of a Dried Florals"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Dried Florals</div>
+              <div class="text2">
+                The Rose<br />
+                East Olivia<br />
+                $75.00
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm description">
+            This delightful Seussical bouquet is perfect for Galentines and
+            Valentines alike. The dried florals will last forever and with every
+            purchase from the Valentine's Day collection, East Olivia will
+            donate a portion of the proceeds to Childhood USA, an organization
+            founded by Her Majesty Queen Silvia of Sweden.
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/alstroemeria.jpg"
+              alt="Image of a Alstroemeria"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Alstroemeria</div>
+              <div class="text2">
+                All of My Heart<br />
+                Bouqs<br />
+                $58.00
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            A symbol of devotion and friendship, the alstroemeria flower is a
+            relative of the lily and possesses and subtle scent that your loved
+            one will adore.
+          </div>
+
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/whiteDaisie.jpg"
+              alt="Image of a White Daisies"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">White Daisies</div>
+              <div class="text2">
+                Pushing Daisy Bouquet<br />
+                fromyouflowers.com<br />
+                $33.99
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            Daisies always make us think of You've Got Mail's Kathleen Kelly
+            (Meg Ryan): "Don't you think daisies are just the friendliest
+            flower?" The white blooms are a happy reminder that spring is just
+            around the corner and that you love your friendly Valentine more
+            than you can say.
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/callaLilies.jpg"
+              alt="Image of a Calla Lilies"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Calla Lilies</div>
+              <div class="text2">
+                Midnight Calla Lily<br />
+                flowerbx.com<br />
+                $110.00
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            For a moody Valentine, the chic and understated midnight Calla Lily
+            might be more her speed. These long-stemmed burgundy calla lilies
+            are total showstoppers.
+          </div>
+
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/carnation.jpg"
+              alt="Image of a Carnations"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Carnations</div>
+              <div class="text2">
+                Cotton Puff Carnation<br />
+                flowerbx.com<br />
+                $70.00
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            These white ruffled flowers make for an affectionate bouquet. They
+            might get a bad rep as a supermarket filler flower, but invest in a
+            luxurious bunch and their true beauty—and subtly spicy scent—blooms.
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/anemones.jpg"
+              alt="Image of a Anemones"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Anemones</div>
+              <div class="text2">
+                In the Clouds<br />
+                Bouqs<br />
+                $59.00
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            The anemone, a bright and peppy floral, is not a traditional
+            Valentine's Day choice, but it's certainly fresh. Delicate and
+            unexpected, the plant is known to symbolize protection, and is a
+            great way to subtly tell your loved one that you care.
+          </div>
+          <div class="col-sm align-self-center priceContainer img-thumbnail">
+            <img
+              src="images/ranunculus.jpg"
+              alt="Image of a Ranunculus"
+              class="img-fluid image"
+            />
+            <div class="overlay">
+              <div class="text">Ranunculus</div>
+              <div class="text2">
+                The Finesse<br />
+                urbanstems.com<br />
+                $80.00
+              </div>
+            </div>
+          </div>
+          <div class="col-sm description">
+            The bright, eye-catching ranunculus represents attractiveness and
+            charm and is a perfect way to tell someone they've caught your
+            attention. Ranunculus are perfect for the person who lights up a
+            room, since these flowers do the same.
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Table with information about the flowers -->
+    <section id="pricing" class="bg-light">
+      <div class="pricing">
+        <h1>Prices</h1>
+        <h4>Have you found your bouquet? Order it below...</h4>
+        <table class="table table-hover table-light">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Flower</th>
+              <th scope="col">Bouquet Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Website</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Long-Stemmed Roses</td>
+              <td>Amour</td>
+              <td>$188.00</td>
+              <td>
+                <a
+                  href="https://www.odealarose.com/product/valentine-s-day-red-roses-bouquet-ode-a-la-rose-40535?sscid=21k6_b8dva&sapa=shareasale"
+                  target="blank"
+                  >odealarose.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Purple Orchids</td>
+              <td>Watercolor Purple Orchid</td>
+              <td>$98.00</td>
+              <td>
+                <a
+                  href="https://www.thesill.com/products/watercolor-purple-orchid?variant=39531250745449&sscid=21k6_b8if3&utm_source=shareasale.com&utm_medium=affiliate_link&utm_campaign=314743"
+                  target="blank"
+                  >thesill.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Sunflowers</td>
+              <td>Hello Sunshine</td>
+              <td>$54.00</td>
+              <td>
+                <a
+                  href="https://bouqs.com/flowers/sunflowers/yellow-sunflowers-solidago?bcid=108068&utm_medium=affiliates&utm_source=pepperjam&utm_campaign=21181&utm_content=8-10465&bouqin=ebay&publisherId=21181&spop=0&clickId=3869564227"
+                  target="blank"
+                  >Bouqs</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Rose Lilies</td>
+              <td>Double The Liliana</td>
+              <td>$80.00</td>
+              <td>
+                <a
+                  href="https://urbanstems.com/products/flowers/double-the-liliana/FLRL-K-00134.html?utm_medium=affiliates&utm_source=Skimlinks+%28Variable+Pricing%29&utm_campaign=1&utm_term=3157217&utm_content=10&ranMID=43912&ranEAID=tv2R4u9rImY&ranSiteID=tv2R4u9rImY-TPkUDlX3aZLUopf.oGnpjQ"
+                  target="blank"
+                  >urbanstems.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Pink Tulips</td>
+              <td>Gabrielle</td>
+              <td>$124.00</td>
+              <td>
+                <a
+                  href="https://www.odealarose.com/product/gabriella-bouquet-jewel-toned-magenta-petals-40512?sscid=21k6_b8k2c&sapa=shareasale"
+                  target="blank"
+                  >odealarose.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Dried Florals</td>
+              <td>The Rose</td>
+              <td>$75.00</td>
+              <td>
+                <a
+                  href="https://shopeastolivia.com/collections/valentines-day-collection-2022/products/the-rose?sscid=21k6_b8krc&"
+                  target="blank"
+                  >East Olivia</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Alstroemeria</td>
+              <td>All of My Heart</td>
+              <td>$58.00</td>
+              <td>
+                <a
+                  href="https://bouqs.com/flowers/i-m-sorry/pink-white-purple-alstroemeria?bcid=108068&utm_medium=affiliates&utm_source=pepperjam&utm_campaign=21181&utm_content=8-10465&bouqin=ebay&publisherId=21181&spop=0&clickId=3869566784"
+                  target="blank"
+                  >Bouqs</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>White Daisies</td>
+              <td>Pushing Daisy Bouquet</td>
+              <td>$33.99</td>
+              <td>
+                <a
+                  href="https://www.fromyouflowers.com/products/pushing_daisy_bouquet.htm?utm_source=Skimlinks&utm_medium=aff&utm_content=100087606&utm_term=14569029&refcode=AFF&cjevent=685d3d748b4c11ec80c601620a180510&cjdata=MXxOfDB8WXww"
+                  target="blank"
+                  >fromyouflowers.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Midnight Calla Lily</td>
+              <td>Amour</td>
+              <td>$110.00</td>
+              <td>
+                <a
+                  href="https://www.flowerbx.com/us/midnight-calla-lily?ranMID=43744&ranEAID=2116208&ranSiteID=TnL5HPStwNw-U5ZS6CzvXTyVtbm.Tp7Sag&utm_source=rakuten&utm_medium=affiliate&utm_campaign=Skimlinks.com&utm_content=10&utm_term=UKNetwork&siteID=TnL5HPStwNw-U5ZS6CzvXTyVtbm.Tp7Sag"
+                  target="blank"
+                  >flowerbx.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Carnations</td>
+              <td>Cotton Puff Carnation</td>
+              <td>$70.00</td>
+              <td>
+                <a
+                  href="https://www.flowerbx.com/us/cotton-puff-carnation?ranMID=43744&ranEAID=2116208&ranSiteID=TnL5HPStwNw-62gx8klSoqrMhSKFESyysw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=Skimlinks.com&utm_content=10&utm_term=UKNetwork&siteID=TnL5HPStwNw-62gx8klSoqrMhSKFESyysw"
+                  target="blank"
+                  >flowerbx.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Anemones</td>
+              <td>In the Clouds</td>
+              <td>$59.00</td>
+              <td>
+                <a
+                  href="https://bouqs.com/flowers/ranunculus/anemones-white-ranunculus?bcid=108068&utm_medium=affiliates&utm_source=pepperjam&utm_campaign=21181&utm_content=8-10465&bouqin=ebay&publisherId=21181&spop=0&clickId=3869569039"
+                  target="blank"
+                  >Bouqs</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Ranunculus</td>
+              <td>The Finesse</td>
+              <td>$80.00</td>
+              <td>
+                <a
+                  href="https://urbanstems.com/products/flowers/the-finesse/FLRL-B-00001.html?utm_medium=affiliates&utm_source=Skimlinks+%28Variable+Pricing%29&utm_campaign=1&utm_term=3157217&utm_content=10&ranMID=43912&ranEAID=tv2R4u9rImY&ranSiteID=tv2R4u9rImY-CHgQ6FMu24sUXDAdY8nZ1w"
+                  target="blank"
+                  >urbanstems.com</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contact information -->
+    <section id="contactInfo">
+      <h1>Contact us</h1>
+      <h6>
+        Looking for something more exotic? We know that we do not have all the
+        flowers in the world but we can definitely help you find what you're
+        looking for. Leave you details below as well as a short description of
+        the flower you're looking for and we'll do our best to help you.
+      </h6>
+      <br />
+      <form id="form" action="#">
+        <div class="form-group row">
+          <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="Name" required />
+            <br />
+            </div>
+
+          <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="Surname" required />
+            <br />
+            </div>
+
+          <div class="col-lg-6 col-sm-12">
+            <input type="email" class="form-control" placeholder="Email" required />
+            <br />
+            </div>
+
+          <div class="col-lg-6 col-sm-12">
+            <input type="tel" class="form-control" placeholder="Contact number" maxlength="10" required />
+          </div>
+
+          <div class="col-lg-12">
+            <textarea
+                type="text"
+                class="form-control formDescription"
+                placeholder="Give us a short description of the flower to help us find it for you..."></textarea>
+            </div>
+            <div class="col-lg-12 formSubmit">
+                <input type="submit" class="btn btn-outline-success" value="Let us do the rest!"></input>
+            </div>
+        </div>
+      </form>
+    </section>
+
+    <footer id="footer" class="bg-dark">
+      Follow our socials
+      <div class="socialMedia">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      ©2022 Nelson Development, Inc. All Rights Reserved.
+    </footer>
+  </body>
+</html>
+
+<!-- End on HTML -->
+
+<!-- 
+    Refernces:
+
+        ALL IMAGES AND INFORMATION ABOUT THE FLOWERS IN THIS CATALOGUE PAGE IS NOT MINE, DOES NOT BELONG TO ME AND AS BEEN TAKEN FROM: 
+            Town&Country
+            - Article: The 12 Best Valentine's Day Flower Arrangements for That Special Someone
+                - URL: https://www.townandcountrymag.com/society/a14108881/best-flowers-for-valentines-day/
+
+        Pintrest
+        - The two images on the banner are taken from Pinterest
+            - Cupid
+                - URL: https://za.pinterest.com/pin/2462974787790881/
+            - Bouquet of rose
+                - URL: https://za.pinterest.com/pin/28288303901856800/
+        
+        All bouquets websites are below:
+            ODE A La Rose: Amour
+                - URL: https://www.odealarose.com/product/valentine-s-day-red-roses-bouquet-ode-a-la-rose-40535?sscid=21k6_b855l&sapa=shareasale
+
+            The Sill: Watercolor Purple Orchid
+                - URL: https://www.thesill.com/products/watercolor-purple-orchid?variant=39531250745449&sscid=21k6_b867h&utm_source=shareasale.com&utm_medium=affiliate_link&utm_campaign=314743
+
+            The bouqs: Hello Sunshine
+                - URL: https://bouqs.com/flowers/sunflowers/yellow-sunflowers-solidago?bcid=108068&utm_medium=affiliates&utm_source=pepperjam&utm_campaign=21181&utm_content=8-10465&bouqin=ebay&publisherId=21181&spop=0&clickId=3869554845
+
+            Urbanstems: Double The Liliana
+                - URL: https://urbanstems.com/products/flowers/double-the-liliana/FLRL-K-00134.html?utm_medium=affiliates&utm_source=Skimlinks+%28Variable+Pricing%29&utm_campaign=1&utm_term=3157217&utm_content=10&ranMID=43912&ranEAID=tv2R4u9rImY&ranSiteID=tv2R4u9rImY-s5M5iFr0QRgni.9QBXo_Ug
+
+            ODE A La Rose: GABRIELLE
+                - URL: https://www.odealarose.com/product/gabriella-bouquet-jewel-toned-magenta-petals-40512?sscid=21k6_b88e8&sapa=shareasale
+
+            East Olivia: The Rose
+                - URL: https://shopeastolivia.com/collections/valentines-day-collection-2022/products/the-rose?sscid=21k6_b88sl&
+
+            The Bouqs: All of My Heart
+                - URL: https://bouqs.com/flowers/i-m-sorry/pink-white-purple-alstroemeria?bcid=108068&utm_medium=affiliates&utm_source=pepperjam&utm_campaign=21181&utm_content=8-10465&bouqin=ebay&publisherId=21181&spop=0&clickId=3869556516
+
+            Fromyouflowers: Pushing Daisy Bouquet
+                - URL: https://www.fromyouflowers.com/products/pushing_daisy_bouquet.htm?utm_source=Skimlinks&utm_medium=aff&utm_content=100087606&utm_term=14569029&refcode=AFF&cjevent=c5af7f0b8b4a11ec80c601600a180510&cjdata=MXxOfDB8WXww
+
+            flowerbx: Midnight Calla Lily
+                - URL: https://www.flowerbx.com/us/midnight-calla-lily?ranMID=43744&ranEAID=2116208&ranSiteID=TnL5HPStwNw-xBPTAHopWXUuX_g9pC6UMw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=Skimlinks.com&utm_content=10&utm_term=UKNetwork&siteID=TnL5HPStwNw-xBPTAHopWXUuX_g9pC6UMw
+
+            flowerbx: Cotton Puff Carnation
+                - URL: https://www.flowerbx.com/us/cotton-puff-carnation?ranMID=43744&ranEAID=2116208&ranSiteID=TnL5HPStwNw-npqEIsc8YhgmBAXhtz2D5g&utm_source=rakuten&utm_medium=affiliate&utm_campaign=Skimlinks.com&utm_content=10&utm_term=UKNetwork&siteID=TnL5HPStwNw-npqEIsc8YhgmBAXhtz2D5g
+
+            thebouqs: In the Clouds
+                - URL: https://bouqs.com/flowers/ranunculus/anemones-white-ranunculus?bcid=108068&utm_medium=affiliates&utm_source=pepperjam&utm_campaign=21181&utm_content=8-10465&bouqin=ebay&publisherId=21181&spop=0&clickId=3869557633
+
+            urbanstems: The Finesse
+                - URL: https://urbanstems.com/products/flowers/the-finesse/FLRL-B-00001.html?utm_medium=affiliates&utm_source=Skimlinks+%28Variable+Pricing%29&utm_campaign=1&utm_term=3157217&utm_content=10&ranMID=43912&ranEAID=tv2R4u9rImY&ranSiteID=tv2R4u9rImY-oR6j4lhJKipEzOTxtoV28w
+
+        W3schools
+            I used w3schools to help style the form
+                - URL: https://www.w3schools.com/html/html_form_input_types.asp
+                - URL: https://www.w3schools.com/html/html_form_attributes.asp
+
+        Fontawesome
+            - Icons in the footer section
+                - URL: https://fontawesome.com/
+ -->
